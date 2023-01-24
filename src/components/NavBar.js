@@ -1,12 +1,15 @@
+
+
 import React from "react";
 
+const links = ["home", "about", "projects"];
+
 function NavBar() {
-  const links = ["home", "about", "projects"];
 
   return <nav>
-  <a hfref = "./Home"> Home</a>
-  <a hfref = "./About"> About</a>
-  <a hfref = "./Projects"> Projects</a>
+    <a key = "home" href= "#home">{links[0]}</a>
+    <a key = "about" href= "#about">{links[1]}</a>
+    <a key = "projects" href= "#projects">{links[2]}</a>
   </nav>;
 }
 
